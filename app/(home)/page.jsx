@@ -7,15 +7,15 @@ export const metadata = {
 
 export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies"
 
-async function getMovies(){
+async function getMovies() {
     // return fetch(URL).then(res => res.json());
-    await new Promise((resolve) => setTimeout(resolve, 10000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     const response = await fetch(API_URL);
-    const json= await response.json();
+    const json = await response.json();
     return json;
 }
 
-export default async function HomePage(){
+export default async function HomePage() {
     // const [isLoading, setIsLoading] = useState(true);
     // const [movies, setMovies] = useState([]);
     // const getMovies = async () => {
@@ -31,7 +31,7 @@ export default async function HomePage(){
     // }, []);
 
     const movies = await getMovies();
-    return(
+    return (
         <div>
             {movies.map((movie) => (
                 <li key={movie.id}>

@@ -39,6 +39,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about-us/company/page.js"
+    ],
+    "/(movies)/movies/[id]/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(movies)/movies/[id]/loading.js"
     ]
   }
 }
