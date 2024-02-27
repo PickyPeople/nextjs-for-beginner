@@ -1,4 +1,6 @@
+import "../syles/global.css";
 import Navigation from "../components/navigation";
+
 // import SalesLayout from "./about-us/company/jobs/sales/layout";
 // import AboutUSLayout from "./about-us/layout";
 export const metadata = {

@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import styles from "../syles/navigation.module.css";
 // import { useState } from "react";
 
 export default function Navigation() {
   const path = usePathname(); ///지금의 경로를 나타내어 준다
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <Link href="/">Home</Link>
