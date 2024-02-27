@@ -1,8 +1,7 @@
 import { API_URL } from "../app/(home)/page";
 import styles from "../syles/movie-info.module.css";
 
-async function getMovie(id) {
-  console.log(`Fetching movies: ${Date.now()}`);
+export async function getMovie(id) {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   const response = await fetch(`${API_URL}/${id}`);
   return response.json();
