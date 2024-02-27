@@ -9,11 +9,9 @@ export default async function MovieDetail({ params: { id } }) { //파라미터�
   //suspense컴포넌트는 동시에 렌더링을 시작한다.
   return (
     <div>
-      <h3>Movie detail page</h3>
       <Suspense fallback={<h1>Loading movie info</h1>}> 
         <MovieInfo id={id} />
       </Suspense>
-      <h3>Movie show videos</h3>
       <Suspense fallback={<h1>Loading movie videos</h1>}>
         <MovieVideos id={id} />
       </Suspense>

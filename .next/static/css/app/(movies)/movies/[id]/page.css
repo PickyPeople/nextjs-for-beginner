@@ -40,3 +40,65 @@
   width: 100%;
   margin: 0 auto;
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./syles/movie-info.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.movie-info_container__dC981 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movie-info_poster__XLNbL {
+  border-radius: 20px;
+  max-width: 30%;
+  place-self: center;
+}
+
+.movie-info_title__FMj7m {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.movie-info_info__YzKlt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.movie-info_average__B7dOS{
+  font-size: 30px;
+}
+
+.movie-info_overview__YLdQK{
+  font-size: 40px;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./syles/movie-videos.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.movie-videos_container__cCFya{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.movie-videos_container__cCFya iframe{
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.movie-videos_container__cCFya iframe:hover{
+  opacity: 1;
+}
